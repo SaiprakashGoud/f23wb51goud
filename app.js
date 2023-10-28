@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 var kettleRouter = require('./routes/kettle');
 var boardRouter = require('./routes/board');
 
+
 var app = express();
 
 // view engine setup
@@ -25,6 +26,7 @@ app.use('/kettle',kettleRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/board',boardRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
